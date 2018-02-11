@@ -1,0 +1,167 @@
+button{
+    border: 0;
+    color: $c-white;
+}
+@mixin btn($width,$height,$bg,$fs:14px,$bord-radius:4px){
+    width: $width;
+    height: $height;
+    line-height: $height;
+    background-color: $bg;
+    font-size: $fs;
+    border-radius: $bord-radius;
+}
+@mixin btn-border($width,$height,$color,$fs:14px,$border-width:1px,$bord-radius:4px,$bg:#fff){
+    width: $width;
+    height: $height;
+    line-height: $height;
+    color: $color;
+    border:$border-width solid $color;
+    font-size: $fs;
+    border-radius: $bord-radius;
+    background-color:$bg;
+}
+@mixin btn-link($color,$background:none){
+    color:$color;
+    background: $background;
+}
+@mixin btn-lg($height,$bg,$fs:20px,$bord-radius:4px){
+    height: $height;
+    line-height: $height;
+    padding: 0 32px;
+    background-color: $bg;
+    font-size: $fs;
+    border-radius: $bord-radius;
+}
+.btn-link-black{
+    @include btn-link($c-333);
+}
+.btn-link-666{
+    @include btn-link($c-666);
+    cursor: pointer;
+}
+.btn-link-grey{
+    @include btn-link($c-ccc);
+    cursor: default;
+}
+.btn-login{
+  width: 56px;
+  height: 30px;
+  border-radius: 4px;
+  background-color: $c-white;
+  border: 1px solid $c-666;
+  color: $c-666;
+}
+.btn-login:hover{
+    border: 1px solid $c-green;
+    color: $c-green;
+}
+.btn-register{
+    width: 56px;
+    height: 30px;
+    border-radius: 4px;
+    border:1px solid $c-green;
+    background-color: $c-light-green;
+}
+.btn-mini-orange-border {
+    @include btn-border(74px, 28px, $c-orange, 14px, 2px, 2px);
+}
+
+.btn-mini-grey-border{
+    @include btn-border(50px, 28px, $c-666);
+}
+.btn-sm-orange-border{
+    @include btn-border(82px, 30px, $c-orange);
+}
+.btn-sm-green-border{
+    @include btn-border(82px, 30px, $c-green);
+}
+.btn-sm-black-border{
+    @include btn-border(82px, 30px, $c-333);
+}
+.btn-md-grey-border{
+    @include btn-border(128px, 40px, $c-666);
+    border: 1px solid  $c-e3;
+}
+.btn-mini-green{
+    @include btn(50px,28px,$c-light-green);
+}
+.btn-mini-grey{
+    @include btn(50px,28px,$c-e3);
+}
+.btn-sm-grey{
+    @include btn(82px,30px,$c-ccc);
+}
+.btn-sm-orange{
+    @include btn(82px,30px,$c-light-orange);
+}
+.btn-md-orange{
+    @include btn(120px,40px,$c-light-orange,16px);
+}
+.btn-md-green{
+    @include btn(120px,40px,$c-light-green,16px);
+}
+.btn-md-grey{
+    @include btn(120px,40px,$c-ccc,16px);
+}
+.btn-orange{
+    @include btn(160px,42px,$c-light-orange,16px);
+}
+.btn-green,.alert-btn-sure{
+    @include btn(160px,42px,$c-light-green,16px);
+}
+.btn-grey{
+    @include btn(160px,42px,$c-ccc,16px);
+}
+.btn-lg-orange{
+    @include btn-lg(42px,$c-light-orange);
+}
+.btn-lg-green{
+    @include btn-lg(42px,$c-light-green);
+}
+.btn-lg-grey{
+    @include btn-lg(42px,$c-ccc);
+}
+@mixin btn-padding-border($height,$color,$fs:14px,$padding:0 20px,$border-radius:4px){
+    height: $height;
+    padding:$padding;
+    color:$color;
+    border:1px solid $c-orange;
+    background: #fff;
+    font-size: $fs;
+    border-radius:$border-radius;
+
+}
+.btn-lg-orange-border{
+    @include btn-padding-border(40px,$c-light-orange,20px);
+}
+.btn-huge-orange{
+    @include btn(272px,44px,$c-light-orange,22px);
+}
+.btn-sm2-orange{
+    @include btn(100px,30px,$c-light-orange,16px);
+}
+.btn-sm-orange:hover,
+.btn-sm2-orange:hover,
+.btn-md-orange:hover,
+.btn-orange:hover,
+.btn-lg-orange:hover,
+.btn-huge-orange:hover{
+    background-color: $c-orange;
+}
+.btn-register:hover,
+.btn-mini-green:hover,
+.btn-md-green:hover,
+.btn-lg-green:hover,
+.btn-green:hover,
+.alert-btn-sure:hover{
+    background-color: $c-green;
+}
+.btn-mini-grey-border:hover,
+.btn-md-grey-border:hover
+{
+    border:1px solid $c-333;
+    color: $c-333;
+}
+
+
+
