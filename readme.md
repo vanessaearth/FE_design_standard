@@ -1,3 +1,10 @@
-## 设计标准能快速的规定一些网站的基本样式
-1.规定设计图行高是文字大小的1.5倍
-2.
+## web前端开发标准
+包含html,css,js涉及到的有一些规范可以提出来的
+具体分别查看
+html.md
+css.md
+js.md
+image.md
+scss.md
+mobile_css.md
+UI.md 
